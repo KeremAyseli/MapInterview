@@ -17,7 +17,10 @@ namespace MapApi.Services.Concreate
         }
         public MatrisDTO GetLayouts(int layoutId)
         {
-           return _matris.Find<MatrisDTO>(matris=>matris.tabloId==layoutId).FirstOrDefault();
+            Console.WriteLine(layoutId);
+            int tabloİd=layoutId;
+            Console.WriteLine(_matris.Find<MatrisDTO>(matris=>matris.tabloId==tabloİd));
+           return _matris.Find<MatrisDTO>(matris=>matris.tabloId==tabloİd).FirstOrDefault();
         }
 
         public List<MatrisDTO> GetLayouts()

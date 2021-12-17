@@ -14,10 +14,11 @@ namespace MapApi.Controllers
         {
             _spiralServices = spiral;
         }
-        [HttpPost()]
-        public List<int[]> Matris(int id)
+        [HttpGet("GetTable")]
+        public List<int[]> Matris(int tabloId)
         {
-            return _spiralServices.GetLayouts(id).layout;
+            Console.WriteLine("service"+tabloId);
+            return _spiralServices.GetLayouts(tabloId).layout;
         }
         [HttpPost("add")]
         public void AddNewLayout(int x, int y)
