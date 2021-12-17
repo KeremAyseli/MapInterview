@@ -1,5 +1,5 @@
 using MapApi.Models;
-using MapApi.Services;
+using MapApi.Services.Concreate;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 namespace MapApi.Controllers
@@ -18,6 +18,10 @@ namespace MapApi.Controllers
         public List<MatrisDTO> Matris(int x,int y){
             
             return  _spiralServices.GetLayouts();
+        }
+        [HttpPost("add")]
+        public void AddNewLayout(){
+         _spiralServices.InsertLayout(10,10);
         }
     }
 }
