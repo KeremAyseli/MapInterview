@@ -5,8 +5,8 @@ using Microsoft.Extensions.Options;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.Configure<MapApi.Models.IntegerSpiralDatabaseSettings>(builder.Configuration.GetSection(nameof(MapApi.Models.IntegerSpiralDatabaseSettings)));
-builder.Services.AddSingleton<MapApi.Models.IIntegerSpiralDatabaseSettings>(sp=>sp.GetRequiredService<IOptions<MapApi.Models.IntegerSpiralDatabaseSettings>>().Value);
+builder.Services.Configure<MapApi.DB.IntegerSpiralDatabaseSettings>(builder.Configuration.GetSection(nameof(MapApi.DB.IntegerSpiralDatabaseSettings)));
+builder.Services.AddSingleton<MapApi.DB.IIntegerSpiralDatabaseSettings>(sp=>sp.GetRequiredService<IOptions<MapApi.DB.IntegerSpiralDatabaseSettings>>().Value);
 builder.Services.AddSingleton<MapApi.Services.Concreate.SpiralServices>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

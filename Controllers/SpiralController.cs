@@ -15,13 +15,14 @@ namespace MapApi.Controllers
             _spiralServices = spiral;
         }
         [HttpPost()]
-        public List<MatrisDTO> Matris(int x,int y){
-            
-            return  _spiralServices.GetLayouts();
+        public List<MatrisDTO> Matris(int x, int y)
+        {
+            return _spiralServices.GetLayouts();
         }
         [HttpPost("add")]
-        public void AddNewLayout(int x,int y){
-         _spiralServices.InsertLayout(x,y);
+        public void AddNewLayout(int x, int y)
+        {
+            _spiralServices.InsertLayout(x, y);
         }
     }
 }

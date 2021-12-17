@@ -30,7 +30,7 @@ namespace MapApi.Services.Concreate
             throw new NotImplementedException();
         }
 
-        public void InsertLayout(int x, int y)
+        public int InsertLayout(int x, int y)
         {
             _MatrisService=new MatrisService(x,y);
             MatrisDTO data = new MatrisDTO();
@@ -39,7 +39,7 @@ namespace MapApi.Services.Concreate
             data.x=x;
             data.y=y;
             _matris.InsertOne(data);
-            
+            return data.tabloId;
         }
     }
 }
