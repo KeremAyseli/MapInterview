@@ -15,9 +15,9 @@ namespace MapApi.Controllers
             _spiralServices = spiral;
         }
         [HttpPost()]
-        public List<MatrisDTO> Matris(int x, int y)
+        public List<int[]> Matris(int id)
         {
-            return _spiralServices.GetLayouts();
+            return _spiralServices.GetLayouts(id).layout;
         }
         [HttpPost("add")]
         public void AddNewLayout(int x, int y)
