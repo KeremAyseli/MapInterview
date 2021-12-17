@@ -6,12 +6,14 @@ namespace MapApi.Models{
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
      public string Id;
+     [BsonElement("TabloId")]
+     public int tabloId;
      [BsonElement("x")]
      public int x;
      [BsonElement("y")]
      public int y;
      
      [BsonElement("layout")]
-     public List<Npoint[]>layout;
+     public List<int[]>layout;
     }
 }

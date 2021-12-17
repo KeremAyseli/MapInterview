@@ -20,8 +20,8 @@ namespace MapApi.Controllers
             return  _spiralServices.GetLayouts();
         }
         [HttpPost("add")]
-        public void AddNewLayout(){
-         _spiralServices.InsertLayout(10,10);
+        public void AddNewLayout(int x,int y){
+         _spiralServices.InsertLayout(x,y);
         }
     }
 }

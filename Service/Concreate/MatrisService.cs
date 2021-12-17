@@ -143,12 +143,16 @@ namespace MapApi.Services.Concreate
         public Npoint[][] GetMatris(){
             return spiralVersion;
         }
-        public List<Npoint[]> GetRow()
-        { List<Npoint[]> rows = new List<Npoint[]>();
-        
+        public List<int[]> GetRow()
+        { List<int[]> rows = new List<int[]>();
+           
             for (int i = 0; i < spiralVersion.Length; i++)
             {
-                rows.Add(spiralVersion[i]);
+                int[] row = new int[spiralVersion[i].Length];
+                for(int j=0;j<spiralVersion[i].Length;j++){
+                   row[j]=spiralVersion[i][j].number;
+                }
+                rows.Add(row);
             }
             return rows;
         }

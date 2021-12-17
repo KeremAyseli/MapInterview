@@ -7,6 +7,7 @@ namespace MapApi.Services.Concreate
     {
         private readonly IMongoCollection<MatrisDTO> _matris;
         private MatrisService _MatrisService; 
+        private Random rnd = new Random();
         public SpiralServices(IIntegerSpiralDatabaseSettings settings){
             Console.WriteLine(settings.ConnectionString);
              var client =new MongoClient(settings.ConnectionString);
@@ -33,6 +34,7 @@ namespace MapApi.Services.Concreate
         {
             _MatrisService=new MatrisService(x,y);
             MatrisDTO data = new MatrisDTO();
+            data.tabloId=rnd.Next(1,100000);
             data.layout=_MatrisService.GetRow();
             data.x=x;
             data.y=y;
