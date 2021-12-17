@@ -17,7 +17,6 @@ namespace MapApi.Controllers
         [HttpGet("GetTable")]
         public List<int[]> Matris(int tabloId)
         {
-            Console.WriteLine("service"+tabloId);
             return _spiralServices.GetLayouts(tabloId).layout;
         }
         [HttpPost("add")]
