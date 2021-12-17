@@ -9,7 +9,6 @@ namespace MapApi.Services.Concreate
         private MatrisService _MatrisService; 
         private Random rnd = new Random();
         public SpiralServices(IIntegerSpiralDatabaseSettings settings){
-            Console.WriteLine(settings.ConnectionString);
              var client =new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
             _matris=database.GetCollection<MatrisDTO>(settings.CollectionName);
