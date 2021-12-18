@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CJInwcWxfzxI+c4KxI96MJmHdTf8SvDQYNy48jwn3GahWHBCBTZkbeK39B00fnw5m3+Y0B386SfHY4dv7cS0Dw==",
+  "dgSpecHash": "dprfzaEz+QFL5IrswpnWbTzyYlpzF/RFKs2xiVHyeAu8rN1TeF8aOv82pmxqZxxjAb57wgvlH4T+XymPLmfwHg==",
   "success": true,
-  "projectFilePath": "D:\\mülakat\\MapApi\\MapApi.csproj",
+  "projectFilePath": "D:\\mülakat\\MapInterview\\MapApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aysel\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\aysel\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

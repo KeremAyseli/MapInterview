@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mülakat\\MapApi\\MapApi.csproj": {}
+    "D:\\mülakat\\MapInterview\\MapApi.csproj": {}
   },
   "projects": {
-    "D:\\mülakat\\MapApi\\MapApi.csproj": {
+    "D:\\mülakat\\MapInterview\\MapApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mülakat\\MapApi\\MapApi.csproj",
+        "projectUniqueName": "D:\\mülakat\\MapInterview\\MapApi.csproj",
         "projectName": "MapApi",
-        "projectPath": "D:\\mülakat\\MapApi\\MapApi.csproj",
+        "projectPath": "D:\\mülakat\\MapInterview\\MapApi.csproj",
         "packagesPath": "C:\\Users\\aysel\\.nuget\\packages\\",
-        "outputPath": "D:\\mülakat\\MapApi\\obj\\",
+        "outputPath": "D:\\mülakat\\MapInterview\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

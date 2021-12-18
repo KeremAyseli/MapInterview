@@ -16,7 +16,7 @@ namespace MapApi.Services.Concreate
         }
         public MatrisDTO GetLayouts(int layoutId)
         {
-           return _matris.Find<MatrisDTO>(matris=>matris.tabloId==tabloİd).FirstOrDefault();
+           return _matris.Find<MatrisDTO>(matris=>matris.tabloId==layoutId).FirstOrDefault();
         }
 
         public List<MatrisDTO> GetLayouts()
@@ -28,7 +28,6 @@ namespace MapApi.Services.Concreate
         {
             throw new NotImplementedException();
         }
-
         public int InsertLayout(int x, int y)
         {
             _MatrisService=new MatrisService(x,y);
