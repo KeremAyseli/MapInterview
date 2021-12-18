@@ -17,7 +17,12 @@ namespace MapApi.Controllers
         [HttpGet("GetTable")]
         public List<int[]> Matris(int tabloId)
         {
+            try{
             return _spiralServices.GetLayouts(tabloId).layout;
+            }
+            catch(Exception e){
+                throw e;
+            }
         }
         [HttpPost("add")]
         public void AddNewLayout(int x, int y)
