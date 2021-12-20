@@ -5,15 +5,15 @@ namespace MapApi.Models{
     public class MatrisDTO{
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-     public string Id;
+     public string Id{get;set;}
      [BsonElement("TabloId")]
-     public int tabloId;
+     public int tabloId{get;set;}
      [BsonElement("x")]
-     public int x;
+     public int x{get;set;}
      [BsonElement("y")]
-     public int y;
+     public int y{get;set;}
      
      [BsonElement("layout")]
-     public List<int[]>layout;
+     public List<int[]>layout{get;set;}
     }
 }

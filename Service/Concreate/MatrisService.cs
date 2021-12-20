@@ -6,14 +6,16 @@ namespace MapApi.Services.Concreate
         Npoint[][] spiralVersion;
         public MatrisService(int x,int y){
             Npoint[][] array1=newMatris(x,y);
+            Console.WriteLine("x ve y"+x +" "+y);
             MakeMatris(array1, array1.Length, array1[0].Length);
+            
         }
         public Npoint[][] newMatris(int x, int y)
         {
-            Npoint[][] array1 = new Npoint[10][];
+            Npoint[][] array1 = new Npoint[x][];
             for (int i = 0; i < array1.Length; i++)
             {
-                array1[i] = new Npoint[10];
+                array1[i] = new Npoint[x];
                 for (int j = 0; j < array1[i].Length; j++)
                 {
                     array1[i][j] = new Npoint();
